@@ -1,0 +1,16 @@
+apply plugin: 'idea'
+apply plugin: 'groovy'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    groovy 'org.codehaus.groovy:groovy-all:2.1.6'
+    compile 'org.elasticsearch:elasticsearch-lang-groovy:1.5.0'
+    compile 'org.codehaus.gpars:gpars:1.1.0'
+    compile 'commons-lang:commons-lang:2.6'
+    //compile 'net.homeip.yusuke:twitter4j:2.0.10'
+
+    testCompile 'org.spockframework:spock-core:0.7-groovy-2.0'
+}
